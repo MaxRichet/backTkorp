@@ -5,7 +5,7 @@ This project is a simple API that manages people and animals. It includes a comp
 ## Project setup
 
 ### 1.
-Download this repository : 
+Download this repository : https://github.com/MaxRichet/backTkorp
 
 ### 2.
 Import .sql file in your database
