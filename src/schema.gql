@@ -1,0 +1,64 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Animal {
+  id: Int!
+  name: String!
+  dateOfBirth: String!
+  species: String!
+  breed: String!
+  color: String!
+  weight: Float!
+  ownerId: Int!
+  person: Person!
+}
+
+type Person {
+  id: Int!
+  lastName: String!
+  firstName: String!
+  email: String!
+  phoneNumber: String!
+  animals: [Animal!]
+}
+
+type Query {
+  findAllPerson: [Person!]!
+  findPersonById(id: Int!): Person!
+  findAnimalsByOwnerId(ownerId: Float!): [Animal!]!
+  personWithMostAnimals: Person
+  personWithMostCats: Person
+  heaviestAnimalGroup: Person
+  findAllAnimal: [Animal!]!
+  findAnimalById(id: Int!): Animal
+  oldestAnimal: Animal
+  getMostRepresentedSpecies: String!
+  heaviestAnimal: Animal
+}
+
+type Mutation {
+  createPerson(PersonInput: PersonInput!): Person!
+  updatePerson(id: Int!, PersonInput: PersonInput!): Person!
+  removePerson(id: Int!): String!
+  createAnimal(AnimalInput: AnimalInput!): Animal!
+  updateAnimal(id: Int!, AnimalInput: AnimalInput!): Animal!
+  removeAnimal(id: Int!): String!
+}
+
+input PersonInput {
+  lastName: String!
+  firstName: String!
+  email: String!
+  phoneNumber: String!
+}
+
+input AnimalInput {
+  name: String!
+  dateOfBirth: String!
+  species: String!
+  breed: String!
+  color: String!
+  weight: Float!
+  ownerId: Int!
+}
