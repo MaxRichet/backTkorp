@@ -314,3 +314,13 @@ Qui possède le groupe d’animaux le plus lourd ? Quel est le poids total de ce
       "totalWeight": 172152
 }
 ```
+
+Axes d'améliorations :
+
+- Travailler plus le design
+
+- Revenir sur le bonne endroit dans la liste après avoir vu le détail d'une personne ou d'un animal
+
+- Mettre les data de connexion à la bdd dans un .env qui n'est pas push sur Github
+
+- Séparer mes éléments front en plus de composants
